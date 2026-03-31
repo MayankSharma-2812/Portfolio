@@ -1,0 +1,51 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* ADD THIS */
+  text-align: center;  /* ADD THIS */
+}
+
+.hero h1 {
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.hero h2 {
+  margin-top: 10px;
+  font-size: 26px;
+  color: #888;
+}
+
+.hero p {
+  margin-top: 20px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+.cta {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  opacity: 0.8;
+}
+.hero h1 {
+  font-size: 72px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #fff, #aaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.proof {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #777;
+}

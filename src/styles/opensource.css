@@ -1,0 +1,51 @@
+.opensource {
+  text-align: center;
+}
+
+.opensource h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.opensource-card {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+  border: 1px solid #222;
+  padding: 30px;
+  border-radius: 12px;
+  background: #111;
+}
+
+.opensource-card h3 {
+  font-size: 22px;
+}
+
+.opensource-card p {
+  margin-top: 15px;
+}
+
+.opensource-card ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.opensource-card li {
+  margin-bottom: 8px;
+  color: #aaa;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.links a {
+  margin-right: 15px;
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}

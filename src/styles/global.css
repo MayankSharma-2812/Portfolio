@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0f0f0f;
+  color: #ffffff;
+}
+
+section {
+  padding: 80px 10%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  color: #a1a1a1;
+}
+section + section {
+  border-top: 1px solid #1a1a1a;
+}
+:root {
+  --bg: #0f0f0f;
+  --text: #ffffff;
+}
+
+.light {
+  --bg: #ffffff;
+  --text: #000000;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
