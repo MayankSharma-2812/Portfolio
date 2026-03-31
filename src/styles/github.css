@@ -1,0 +1,34 @@
+#github {
+  padding: var(--section-padding);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.github__container {
+  padding: 32px;
+}
+
+.github__stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.github__img {
+  max-width: 100%;
+  width: 460px;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+@media (max-width: 768px) {
+  .github__stats {
+    flex-direction: column;
+  }
+
+  .github__img {
+    width: 100%;
+  }
+}
