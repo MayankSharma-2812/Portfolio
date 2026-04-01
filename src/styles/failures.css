@@ -1,0 +1,51 @@
+.failures-intro {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: var(--text-secondary);
+}
+
+.failures-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-left: 2px solid var(--border-subtle);
+  padding-left: 32px;
+  margin-left: 12px;
+}
+
+.failure-card {
+  position: relative;
+}
+
+.failure-card::before {
+  content: '';
+  position: absolute;
+  left: -41px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  background: var(--bg-primary);
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+}
+
+.failure-card h3 {
+  font-size: 20px;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.failure-desc {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.failure-lesson {
+  display: inline-block;
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--accent-light);
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  border-left: 3px solid var(--accent);
+}

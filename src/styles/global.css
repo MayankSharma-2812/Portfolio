@@ -23,19 +23,17 @@
   --accent-2: #06b6d4;
   --accent-3: #22c55e;
 
-  --gradient-accent: linear-gradient(135deg, #8b5cf6, #06b6d4);
-  --gradient-accent-hover: linear-gradient(135deg, #a78bfa, #22d3ee);
-  --gradient-text: linear-gradient(135deg, #f0f0f5 0%, #8b5cf6 50%, #06b6d4 100%);
+  --gradient-accent: var(--accent);
+  --gradient-accent-hover: var(--accent-light);
+  --gradient-text: var(--text-primary);
 
-  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.2);
   --shadow-card-hover: 0 8px 40px rgba(139, 92, 246, 0.15);
   --shadow-glow: 0 0 30px rgba(139, 92, 246, 0.2);
 
   --scrollbar-track: #0a0a0f;
   --scrollbar-thumb: #7c3aed;
   --scrollbar-thumb-hover: #8b5cf6;
-
-  --noise-opacity: 0.03;
 }
 
 /* ── Light Theme ── */
@@ -60,19 +58,17 @@
   --accent-2: #0891b2;
   --accent-3: #16a34a;
 
-  --gradient-accent: linear-gradient(135deg, #7c3aed, #0891b2);
-  --gradient-accent-hover: linear-gradient(135deg, #8b5cf6, #06b6d4);
-  --gradient-text: linear-gradient(135deg, #1a1a2e 0%, #7c3aed 50%, #0891b2 100%);
+  --gradient-accent: var(--accent);
+  --gradient-accent-hover: var(--accent-light);
+  --gradient-text: var(--text-primary);
 
-  --shadow-card: 0 2px 16px rgba(0, 0, 0, 0.06);
-  --shadow-card-hover: 0 8px 32px rgba(139, 92, 246, 0.1);
-  --shadow-glow: 0 0 24px rgba(139, 92, 246, 0.12);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 4px 16px rgba(139, 92, 246, 0.08);
+  --shadow-glow: none;
 
   --scrollbar-track: #fafafe;
   --scrollbar-thumb: #a78bfa;
   --scrollbar-thumb-hover: #8b5cf6;
-
-  --noise-opacity: 0.02;
 }
 
 /* ── Spacing ── */
@@ -113,19 +109,6 @@ body {
   transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* ── Noise Texture Overlay ── */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  pointer-events: none;
-  opacity: var(--noise-opacity);
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 256px;
-}
-
 /* ── Selection ── */
 ::selection {
   background: var(--accent);
@@ -157,10 +140,7 @@ section {
 }
 
 .section-title span {
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent);
 }
 
 .section-label {
